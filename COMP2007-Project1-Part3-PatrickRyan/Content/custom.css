@@ -1,0 +1,67 @@
+﻿/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+  background-color: #f7531a;
+}
+body {
+  /* Margin bottom by footer height */
+ font-size: 150%;
+	font-family:sans-serif;
+	color: #333;
+	width: 1000px;
+	background-color: white;
+	margin: 0px 25px 25px 175px;
+    padding-bottom: 4em;
+	border-radius: 4px; 
+    height: 1000px;
+}
+
+nav {
+     width: 100%;
+     height: 40px;
+     background: -webkit-linear-gradient(#3f9a15, #388813, #3f9a15, #388813, #3f9a15);
+     background: -o-linear-gradient(#3f9a15, #388813, #3f9a15, #388813, #3f9a15);
+     background: linear-gradient(#3f9a15, #388813, #3f9a15, #388813, #3f9a15);
+     -moz-border-radius: 
+        }
+.nav a{
+    color: white !important;
+    font-size: 1.1em !important;
+    }
+.nav li{
+    padding-right:5px;
+   }
+
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. 
+    hihioiioiioijohihuohii
+*/
+.container .text-muted {
+  margin: 20px 0;
+}
+.About{
+    margin-left: 638px;
+    border-bottom-style:solid;
+    border-bottom-width:thick;
+}
+.Contact{
+    margin-left: 850px;
+}
+form {
+    height: 100%;
+}
+.footer {
+    position: absolute;
+    width: 100%;
+}
+.img1{
+    margin-left: 250px;
+}
+.img2{
+    margin-left: 250px;
+}

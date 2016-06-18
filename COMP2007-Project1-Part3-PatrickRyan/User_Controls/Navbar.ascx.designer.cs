@@ -7,13 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace COMP2007_Project1_Part3_PatrickRyan
-{
-
-
-    public partial class Navbar
-    {
-
+namespace COMP2007_Project1_Part3_PatrickRyan {
+    
+    
+    public partial class Navbar {
+        
         /// <summary>
         /// home control.
         /// </summary>
@@ -22,7 +20,7 @@ namespace COMP2007_Project1_Part3_PatrickRyan
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl home;
-
+        
         /// <summary>
         /// gameregister control.
         /// </summary>
@@ -31,7 +29,7 @@ namespace COMP2007_Project1_Part3_PatrickRyan
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl gameregister;
-
+        
         /// <summary>
         /// register control.
         /// </summary>
@@ -40,7 +38,7 @@ namespace COMP2007_Project1_Part3_PatrickRyan
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl register;
-
+        
         /// <summary>
         /// login control.
         /// </summary>
@@ -49,5 +47,14 @@ namespace COMP2007_Project1_Part3_PatrickRyan
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl login;
+        
+        /// <summary>
+        /// logout control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl logout;
     }
 }

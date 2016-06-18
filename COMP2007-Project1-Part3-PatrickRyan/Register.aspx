@@ -11,16 +11,16 @@
 
         <div class="row">
 
-            <div class="col-md-offset-4 col-md-4">
+            <div class="col-md-offset-3 col-md-4">
 
                  <div class="alert alert-danger" id="AlertFlash" runat="server" visible="false">
 
                     <asp:Label runat="server" ID="StatusLabel" />
 
                 </div>
-
+                <div class="h1">
                 <h1>Register Page</h1>
-
+                </div>
 
                 <br />
 

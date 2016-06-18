@@ -11,7 +11,7 @@
 
         <div class="row">
 
-            <div class="col-md-offset-4 col-md-4"> 
+            <div class="col-md-offset-3 col-md-4"> 
 
                 <div class="alert alert-danger" id="AlertFlash" runat="server" visible="false">
 

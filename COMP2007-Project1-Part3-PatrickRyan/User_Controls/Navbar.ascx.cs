@@ -5,6 +5,10 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
+using Microsoft.AspNet.Identity;
+using Microsoft.AspNet.Identity.EntityFramework;
+using Microsoft.Owin.Security;
+
 /**
  * @author: Patrick Ross - Ryan Jameson
  * @date: June 6th, 2016
@@ -17,7 +21,28 @@ namespace COMP2007_Project1_Part3_PatrickRyan
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            SetActivePage();
+            if (!IsPostBack)
+            {
+                // check if a user is logged in
+                if (HttpContext.Current.User.Identity.IsAuthenticated)
+                {
+
+                    // show the Contoso Content area
+                    AddingPlaceHolder.Visible = true;
+                    PublicPlaceHolder.Visible = false;
+
+                
+                }
+                else
+                {
+                    // only show login and register
+                    AddingPlaceHolder.Visible = false;
+                    PublicPlaceHolder.Visible = true;
+                   
+                }
+                SetActivePage();
+            }
+
         }
 
         /**
@@ -46,6 +71,9 @@ namespace COMP2007_Project1_Part3_PatrickRyan
                     break;
                 case "Logout":
                     logout.Attributes.Add("class", "active");
+                    break;
+                case "Modify":
+                    modify.Attributes.Add("class", "active");
                     break;
             }
         }

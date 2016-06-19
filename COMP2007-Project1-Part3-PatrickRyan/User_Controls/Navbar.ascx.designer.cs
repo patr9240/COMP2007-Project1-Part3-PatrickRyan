@@ -31,6 +31,15 @@ namespace COMP2007_Project1_Part3_PatrickRyan {
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl gameregister;
         
         /// <summary>
+        /// PublicPlaceHolder control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.PlaceHolder PublicPlaceHolder;
+        
+        /// <summary>
         /// register control.
         /// </summary>
         /// <remarks>
@@ -47,6 +56,24 @@ namespace COMP2007_Project1_Part3_PatrickRyan {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl login;
+        
+        /// <summary>
+        /// AddingPlaceHolder control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.PlaceHolder AddingPlaceHolder;
+        
+        /// <summary>
+        /// modify control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl modify;
         
         /// <summary>
         /// logout control.

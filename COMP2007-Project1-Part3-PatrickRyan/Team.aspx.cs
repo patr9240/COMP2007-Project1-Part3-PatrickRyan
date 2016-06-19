@@ -9,6 +9,10 @@ using COMP2007_Project1_Part3_PatrickRyan.Models;
 using System.Web.ModelBinding;
 using System.Linq.Dynamic;
 
+using Microsoft.AspNet.Identity;
+using Microsoft.AspNet.Identity.EntityFramework;
+using Microsoft.Owin.Security;
+
 /**
  * @author: Patrick Ross - Ryan Jameson
  * @date: June 15th, 2016
@@ -27,6 +31,21 @@ namespace COMP2007_Project1_Part3_PatrickRyan
                 //get the Team data
                 this.GetTeams();
             }
+
+            if (HttpContext.Current.User.Identity.IsAuthenticated)
+            {
+
+                // show the team add button
+                AddingTeamHolder.Visible = true;
+                
+
+
+            }
+            else
+            {
+                AddingTeamHolder.Visible = false;
+            }
+          
         }
 
         /**

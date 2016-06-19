@@ -28,6 +28,19 @@ namespace COMP2007_Project1_Part3_PatrickRyan
                 //get the games data
                 this.GetGames();
             }
+            if (HttpContext.Current.User.Identity.IsAuthenticated)
+            {
+
+                // show the team add button
+                AddingGameHolder.Visible = true;
+
+
+
+            }
+            else
+            {
+                AddingGameHolder.Visible = false;
+            }
         }
 
         /**

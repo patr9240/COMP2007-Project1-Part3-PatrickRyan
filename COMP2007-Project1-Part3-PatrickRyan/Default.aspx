@@ -15,7 +15,7 @@
         <div class="row">
             <div class="col-md-offset-2 col-md-8">
                 <h3><asp:Label ID="TrackingDateLabel" runat="server"></asp:Label></h3>
-                <a href="GameRegister.aspx" class="btn btn-success btn-sm"><i class="fa fa-plus"></i>Add a Game</a>
+                <a href="/Adding/GameRegister.aspx" class="btn btn-success btn-sm"><i class="fa fa-plus"></i>Add a Game</a>
                 <asp:GridView ID="GamesGridView" runat="server" CssClass="table table-bordered table-striped table-hover"
                     AutoGenerateColumns="false" DataKeyNames="GameID" OnRowDeleting="GamesGridView_RowDeleting">
                     <Columns>

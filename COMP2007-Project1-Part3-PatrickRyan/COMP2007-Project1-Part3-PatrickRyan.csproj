@@ -167,7 +167,7 @@
     <Content Include="Default.aspx" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="GameRegister.aspx" />
+    <Content Include="Adding\GameRegister.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="Logout.aspx" />
     <Content Include="Models\ContosoModel.Context.tt">
@@ -205,7 +205,7 @@
     <Content Include="Scripts\jquery-2.2.4.js" />
     <Content Include="Scripts\jquery-2.2.4.min.js" />
     <Content Include="Team.aspx" />
-    <Content Include="TeamRegister.aspx" />
+    <Content Include="Adding\TeamRegister.aspx" />
     <Content Include="User_Controls\Jumbotron.ascx" />
     <Content Include="User_Controls\Navbar.ascx" />
     <Content Include="fonts\FontAwesome.otf" />
@@ -264,11 +264,11 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="GameRegister.aspx.cs">
+    <Compile Include="Adding\GameRegister.aspx.cs">
       <DependentUpon>GameRegister.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="GameRegister.aspx.designer.cs">
+    <Compile Include="Adding\GameRegister.aspx.designer.cs">
       <DependentUpon>GameRegister.aspx</DependentUpon>
     </Compile>
     <Compile Include="Login.aspx.cs">
@@ -348,11 +348,11 @@
     <Compile Include="Team.aspx.designer.cs">
       <DependentUpon>Team.aspx</DependentUpon>
     </Compile>
-    <Compile Include="TeamRegister.aspx.cs">
+    <Compile Include="Adding\TeamRegister.aspx.cs">
       <DependentUpon>TeamRegister.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="TeamRegister.aspx.designer.cs">
+    <Compile Include="Adding\TeamRegister.aspx.designer.cs">
       <DependentUpon>TeamRegister.aspx</DependentUpon>
     </Compile>
     <Compile Include="User_Controls\Jumbotron.ascx.cs">

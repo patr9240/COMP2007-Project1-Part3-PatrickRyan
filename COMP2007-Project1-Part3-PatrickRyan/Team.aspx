@@ -16,7 +16,7 @@
                 <div class="row">
                     <div class="col-md-offset-2 col-md-8">
                         <h3>Teams</h3>
-                        <a href="TeamRegister.aspx" class="btn btn-success btn-sm"><i class="fa fa-plus"></i>Add a Team</a>
+                        <a href="/Adding/TeamRegister.aspx" class="btn btn-success btn-sm"><i class="fa fa-plus"></i>Add a Team</a>
                         <asp:GridView ID="TeamsGridView" runat="server" CssClass="table table-bordered table-striped table-hover"
                             AutoGenerateColumns="false" DataKeyNames="TeamID" OnRowDeleting="TeamsGridView_RowDeleting">
                             <Columns>

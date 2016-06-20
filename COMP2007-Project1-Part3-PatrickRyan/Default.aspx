@@ -13,7 +13,7 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-md-offset-2 col-md-8">
+            <div class="col-md-offset-1 col-md-8">
                 <h3><asp:Label ID="TrackingDateLabel" runat="server"></asp:Label></h3>
                 <asp:PlaceHolder ID="AddingGameHolder" runat="server">
                 <a href="/Adding/GameRegister.aspx" class="btn btn-success btn-sm"><i class="fa fa-plus"></i>Add a Game</a>
@@ -30,9 +30,6 @@
                         <asp:BoundField DataField="Team2" HeaderText="Second Team" Visible="true" />
                         <asp:BoundField DataField="WinningTeam" HeaderText="Winner" Visible="true" />
                         <asp:BoundField DataField="Created" HeaderText="Current Date" DataFormatString="{0:d}" Visible="false" />
-
-                        <asp:CommandField HeaderText="Delete" DeleteText="<i class='fa fa-trash-o fa-lg'></i> Delete" ShowDeleteButton="true" ButtonType="Link"
-                            ControlStyle-CssClass="btn btn-danger btn-sm" />
                     </Columns>
                 </asp:GridView>
             </div>
@@ -46,7 +43,7 @@
                 <asp:ListItem Text="Third Week" Value="2016-06-19" />
                 <asp:ListItem Text="Fourth Week" Value="2016-06-26" />
                 <asp:ListItem Text="Placeholder" Value="2016-07-03" Enabled="False" />
-            </asp:DropDownList>
+            </asp:DropDownList> 
         </div>
     </div>
 </asp:Content>

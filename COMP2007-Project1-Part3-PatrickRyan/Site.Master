@@ -51,7 +51,7 @@
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
         </div>
-        <footer class="footer navbar navbar-fixed-bottom bg-info">
+        <footer id="footer" class="footer navbar navbar-fixed-bottom bg-info">
             <div class="container">
                 <p class="text-muted"> &copy; 2016 NorthStar Corporation &trade;<a class="About" href="About.aspx">About Us</a>
                 <a class="Contact" href="Contact.aspx">Contact Us</a></p>

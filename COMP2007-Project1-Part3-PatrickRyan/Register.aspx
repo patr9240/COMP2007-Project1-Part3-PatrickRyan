@@ -15,11 +15,6 @@
                 </div>        
                 <h1>Register Page</h1>
                 <br />
-                <div class="panel panel-primary">
-                    <div class="panel-heading">
-                        <h1 class="panel-title"><i class="fa fa-user-plus fa-lg"></i> Register</h1>
-                    </div>
-                    <div class="panel-body">
                         <div class="form-group">
                             <label class="control-label" for="UserNameTextBox">Username:</label>
                             <asp:TextBox runat="server" CssClass="form-control" ID="UserNameTextBox" placeholder="Username" required="true" TabIndex="0"></asp:TextBox>
@@ -47,8 +42,6 @@
                             <asp:Button Text="Register" ID="RegisterButton" runat="server" CssClass="btn btn-primary" OnClick="RegisterButton_Click" TabIndex="0" />
                         </div>
                     </div>
-                </div>  
-            </div>
         </div>
     </div>
 </asp:Content>

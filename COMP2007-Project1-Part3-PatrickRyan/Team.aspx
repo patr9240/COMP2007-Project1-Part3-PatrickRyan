@@ -14,7 +14,7 @@
         <div class="row">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-offset-2 col-md-8">
+                    <div class="col-md-offset-1 col-md-8">
                         <h3>Teams</h3>
                          <asp:PlaceHolder ID="AddingTeamHolder" runat="server">
                         <a href="/Adding/TeamRegister.aspx" class="btn btn-success btn-sm"><i class="fa fa-plus"></i>Add a Team</a>
@@ -29,8 +29,6 @@
                                 <asp:BoundField DataField="City" HeaderText="City" Visible="true" />
                                 <asp:BoundField DataField="TotalRuns" HeaderText="Total Runs" Visible="true" />
                                 <asp:BoundField DataField="AllowedRuns" HeaderText="Allowed Runs" Visible="true" />
-                                <asp:CommandField HeaderText="Delete" DeleteText="<i class='fa fa-trash-o fa-lg'></i> Delete" ShowDeleteButton="true" ButtonType="Link"
-                                    ControlStyle-CssClass="btn btn-danger btn-sm" />
                             </Columns>
                         </asp:GridView>
                     </div>

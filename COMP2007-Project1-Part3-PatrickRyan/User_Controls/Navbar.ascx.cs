@@ -90,6 +90,9 @@ namespace COMP2007_Project1_Part3_PatrickRyan
                 case "Logout":
                     logout.Attributes.Add("class", "active");
                     break;
+                case "Profile":
+                    profile.Attributes.Add("class", "active");
+                    break;
 
                 case "AdminGames":
                     admingames.Attributes.Add("class", "active");

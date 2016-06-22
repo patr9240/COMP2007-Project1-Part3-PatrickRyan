@@ -112,13 +112,13 @@ namespace COMP2007_Project1_Part3_PatrickRyan {
         protected global::System.Web.UI.WebControls.PlaceHolder AddingPlaceHolder;
         
         /// <summary>
-        /// modify control.
+        /// profile control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl modify;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl profile;
         
         /// <summary>
         /// logout control.

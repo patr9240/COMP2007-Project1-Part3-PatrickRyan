@@ -40,7 +40,7 @@
                 <li id="adminusers" runat="server"><a class="navbar-brand" href="/Admin/AdminUsers.aspx"><i class="fa fa-users fa-lg"></i>Admin Users</a></li>
                 </asp:PlaceHolder>
                 <asp:PlaceHolder ID="AddingPlaceHolder" runat="server">
-                    <li id="modify" runat="server"><a class="navbar-brand" href="/Modify.aspx"><i class="fa fa-sign-in fa-lg"></i>Modify</a></li>
+                    <li id="profile" runat="server"><a class="navbar-brand" href="/Profile.aspx"><i class="fa fa-user-in fa-lg"></i>Profile</a></li>
                  <li id="logout" runat="server"><a class="navbar-brand" href="/Logout.aspx"><i class="fa fa-sign-in fa-lg"></i>Logout</a></li>
                  
                 </asp:PlaceHolder>

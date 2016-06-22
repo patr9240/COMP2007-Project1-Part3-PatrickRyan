@@ -36,6 +36,7 @@
                 </asp:PlaceHolder>
                 <asp:PlaceHolder ID="AdminPlaceHolder" runat="server"> 
                 <li id="admingames" runat="server"><a class="navbar-brand" href="/Admin/AdminGames.aspx"><i class="fa fa-home fa-lg"></i>Admin Home</a></li>
+                <li id="adminteams" runat="server"><a class="navbar-brand" href="/Admin/AdminTeams.aspx"><i class="fa fa-users fa-lg"></i>Admin Teams</a></li>
                 </asp:PlaceHolder>
                 <asp:PlaceHolder ID="AddingPlaceHolder" runat="server">
                     <li id="modify" runat="server"><a class="navbar-brand" href="/Modify.aspx"><i class="fa fa-sign-in fa-lg"></i>Modify</a></li>

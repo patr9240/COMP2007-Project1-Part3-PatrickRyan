@@ -22,7 +22,7 @@
                     <div class="panel-body">
 
                         <address>
-                            <strong>Some Game Company</strong><br>
+                            <strong>NorthStart Corp</strong><br>
                             67 Toronto Street<br>
                             Barrie, CA L9L 9L9<br>
                             <abbr title="Phone">TEL:</abbr>

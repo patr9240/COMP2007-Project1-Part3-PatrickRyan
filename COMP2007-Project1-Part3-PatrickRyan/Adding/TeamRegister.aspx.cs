@@ -70,7 +70,7 @@ namespace COMP2007_Project1_Part3_PatrickRyan
                 // save our changes - also updates and inserts
                 db.SaveChanges();
 
-                // Redirect back to the updated departments page
+                // Redirect back to the updated team page
                 Response.Redirect("~/Team.aspx");
             }
         }

@@ -81,6 +81,12 @@ namespace COMP2007_Project1_Part3_PatrickRyan
                 case "Admin Game Register":
                     admingames.Attributes.Add("class", "active");
                     break;
+                case "AdminTeams":
+                    adminteams.Attributes.Add("class", "active");
+                    break;
+                case "AdminRegisterTeams":
+                    adminteams.Attributes.Add("class", "active");
+                    break;
                 case "Team":
                     team.Attributes.Add("class", "active");
                     break;

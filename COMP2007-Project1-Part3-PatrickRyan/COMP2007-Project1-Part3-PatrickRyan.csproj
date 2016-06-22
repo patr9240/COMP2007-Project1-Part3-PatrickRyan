@@ -128,6 +128,8 @@
     <Content Include="About.aspx" />
     <Content Include="Admin\AdminGames.aspx" />
     <Content Include="Admin\AdminRegisterGames.aspx" />
+    <Content Include="Admin\AdminRegisterTeams.aspx" />
+    <Content Include="Admin\AdminTeams.aspx" />
     <Content Include="Assets\android-chrome-144x144.png" />
     <Content Include="Assets\android-chrome-192x192.png" />
     <Content Include="Assets\android-chrome-36x36.png" />
@@ -283,6 +285,20 @@
     </Compile>
     <Compile Include="Admin\AdminRegisterGames.aspx.designer.cs">
       <DependentUpon>AdminRegisterGames.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminRegisterTeams.aspx.cs">
+      <DependentUpon>AdminRegisterTeams.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminRegisterTeams.aspx.designer.cs">
+      <DependentUpon>AdminRegisterTeams.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminTeams.aspx.cs">
+      <DependentUpon>AdminTeams.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminTeams.aspx.designer.cs">
+      <DependentUpon>AdminTeams.aspx</DependentUpon>
     </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>

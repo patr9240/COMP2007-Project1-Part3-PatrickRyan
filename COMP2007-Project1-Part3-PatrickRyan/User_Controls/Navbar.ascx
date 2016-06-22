@@ -26,16 +26,20 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-                <li id="home" runat="server"><a class="navbar-brand" href="Default.aspx"><i class="fa fa-home fa-lg"></i>Home</a></li>
-                <li id="gameregister" runat="server"><a class="navbar-brand" href="Team.aspx"><i class="fa fa-users fa-lg"></i>Teams</a></li>
-
                 <asp:PlaceHolder ID="PublicPlaceHolder" runat="server">
-                <li id="register" runat="server"><a class="navbar-brand" href="Register.aspx"><i class="fa fa-reddit-alien fa-lg"></i>Register</a></li>
-                <li id="login" runat="server"><a class="navbar-brand" href="Login.aspx"><i class="fa fa-sign-in fa-lg"></i>Login</a></li>
+                <li id="home" runat="server"><a class="navbar-brand" href="/Default.aspx"><i class="fa fa-home fa-lg"></i>Home</a></li>
+                <li id="team" runat="server"><a class="navbar-brand" href="/Team.aspx"><i class="fa fa-users fa-lg"></i>Teams</a></li>
+                </asp:PlaceHolder>
+                <asp:PlaceHolder ID="LoginPlaceHolder" runat="server">
+                <li id="register" runat="server"><a class="navbar-brand" href="/Register.aspx"><i class="fa fa-reddit-alien fa-lg"></i>Register</a></li>
+                <li id="login" runat="server"><a class="navbar-brand" href="/Login.aspx"><i class="fa fa-sign-in fa-lg"></i>Login</a></li>
+                </asp:PlaceHolder>
+                <asp:PlaceHolder ID="AdminPlaceHolder" runat="server"> 
+                <li id="admingames" runat="server"><a class="navbar-brand" href="/Admin/AdminGames.aspx"><i class="fa fa-home fa-lg"></i>Admin Home</a></li>
                 </asp:PlaceHolder>
                 <asp:PlaceHolder ID="AddingPlaceHolder" runat="server">
-                    <li id="modify" runat="server"><a class="navbar-brand" href="Modify.aspx"><i class="fa fa-sign-in fa-lg"></i>Modify</a></li>
-                 <li id="logout" runat="server"><a class="navbar-brand" href="Logout.aspx"><i class="fa fa-sign-in fa-lg"></i>Logout</a></li>
+                    <li id="modify" runat="server"><a class="navbar-brand" href="/Modify.aspx"><i class="fa fa-sign-in fa-lg"></i>Modify</a></li>
+                 <li id="logout" runat="server"><a class="navbar-brand" href="/Logout.aspx"><i class="fa fa-sign-in fa-lg"></i>Logout</a></li>
                  
                 </asp:PlaceHolder>
             </ul>

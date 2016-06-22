@@ -13,6 +13,15 @@ namespace COMP2007_Project1_Part3_PatrickRyan {
     public partial class Navbar {
         
         /// <summary>
+        /// PublicPlaceHolder control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.PlaceHolder PublicPlaceHolder;
+        
+        /// <summary>
         /// home control.
         /// </summary>
         /// <remarks>
@@ -22,22 +31,22 @@ namespace COMP2007_Project1_Part3_PatrickRyan {
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl home;
         
         /// <summary>
-        /// gameregister control.
+        /// team control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl gameregister;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl team;
         
         /// <summary>
-        /// PublicPlaceHolder control.
+        /// LoginPlaceHolder control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.PlaceHolder PublicPlaceHolder;
+        protected global::System.Web.UI.WebControls.PlaceHolder LoginPlaceHolder;
         
         /// <summary>
         /// register control.
@@ -56,6 +65,24 @@ namespace COMP2007_Project1_Part3_PatrickRyan {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl login;
+        
+        /// <summary>
+        /// AdminPlaceHolder control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.PlaceHolder AdminPlaceHolder;
+        
+        /// <summary>
+        /// admingames control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl admingames;
         
         /// <summary>
         /// AddingPlaceHolder control.

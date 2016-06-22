@@ -27,18 +27,30 @@ namespace COMP2007_Project1_Part3_PatrickRyan
                 if (HttpContext.Current.User.Identity.IsAuthenticated)
                 {
 
-                    // show the Contoso Content area
+                    // show the logged in Content area
+                    AdminPlaceHolder.Visible = false;
+                    LoginPlaceHolder.Visible = false;
                     AddingPlaceHolder.Visible = true;
-                    PublicPlaceHolder.Visible = false;
+                    PublicPlaceHolder.Visible = true;
+                    
 
-                
+                    //check if admin is logged in
+                    if (HttpContext.Current.User.Identity.GetUserName() == "admin")
+                    {
+                        //show admin links
+                        AdminPlaceHolder.Visible = true;
+                        PublicPlaceHolder.Visible = false;
+                    }
+                                                    
                 }
                 else
                 {
                     // only show login and register
+                    AdminPlaceHolder.Visible = false;
                     AddingPlaceHolder.Visible = false;
+                    LoginPlaceHolder.Visible = true;
                     PublicPlaceHolder.Visible = true;
-                   
+
                 }
                 SetActivePage();
             }
@@ -62,6 +74,18 @@ namespace COMP2007_Project1_Part3_PatrickRyan
                     break;
                 case "Game Register":
                     home.Attributes.Add("class", "active");
+                    break;
+                case "AdminGames":
+                    admingames.Attributes.Add("class", "active");
+                    break;
+                case "Admin Game Register":
+                    admingames.Attributes.Add("class", "active");
+                    break;
+                case "Team":
+                    team.Attributes.Add("class", "active");
+                    break;
+                case "Team Register":
+                    team.Attributes.Add("class", "active");
                     break;
                 case "Register":
                     register.Attributes.Add("class", "active");

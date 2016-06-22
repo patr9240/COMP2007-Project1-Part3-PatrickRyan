@@ -7,10 +7,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace COMP2007_Project1_Part3_PatrickRyan {
+namespace COMP2007_Project1_Part3_PatrickRyan.Admin {
     
     
-    public partial class GameRegister {
+    public partial class AdminRegisterGames {
         
         /// <summary>
         /// GameNameTextBox control.
@@ -74,6 +74,24 @@ namespace COMP2007_Project1_Part3_PatrickRyan {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox WinningTeamTextBox;
+        
+        /// <summary>
+        /// CreatedDate control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox CreatedDate;
+        
+        /// <summary>
+        /// RangeValidator1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RangeValidator RangeValidator1;
         
         /// <summary>
         /// CancelButton control.

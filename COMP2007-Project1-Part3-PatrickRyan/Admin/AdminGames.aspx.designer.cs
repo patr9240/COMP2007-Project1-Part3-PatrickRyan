@@ -7,10 +7,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace COMP2007_Project1_Part3_PatrickRyan {
+namespace COMP2007_Project1_Part3_PatrickRyan.Admin {
     
     
-    public partial class _default {
+    public partial class AdminGames {
         
         /// <summary>
         /// TrackingDateLabel control.
@@ -20,15 +20,6 @@ namespace COMP2007_Project1_Part3_PatrickRyan {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label TrackingDateLabel;
-        
-        /// <summary>
-        /// AddingGameHolder control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.PlaceHolder AddingGameHolder;
         
         /// <summary>
         /// GamesGridView control.

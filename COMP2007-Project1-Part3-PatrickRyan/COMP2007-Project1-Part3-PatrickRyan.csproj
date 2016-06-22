@@ -126,6 +126,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="Admin\AdminGames.aspx" />
+    <Content Include="Admin\AdminRegisterGames.aspx" />
     <Content Include="Assets\android-chrome-144x144.png" />
     <Content Include="Assets\android-chrome-192x192.png" />
     <Content Include="Assets\android-chrome-36x36.png" />
@@ -267,6 +269,20 @@
     </Compile>
     <Compile Include="About.aspx.designer.cs">
       <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminGames.aspx.cs">
+      <DependentUpon>AdminGames.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminGames.aspx.designer.cs">
+      <DependentUpon>AdminGames.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminRegisterGames.aspx.cs">
+      <DependentUpon>AdminRegisterGames.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminRegisterGames.aspx.designer.cs">
+      <DependentUpon>AdminRegisterGames.aspx</DependentUpon>
     </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>

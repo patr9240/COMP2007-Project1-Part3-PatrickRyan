@@ -6,6 +6,7 @@
      Patrick Ross - Ryan Jameson
      COMP2007_Project1_Part3_PatrickRyan
      This is the home page for NorthStar Tracking
+        Home
     -->
     <div class="img1">
         <img src="Assets/baseball.gif" />

@@ -39,7 +39,7 @@ namespace COMP2007_Project1_Part3_PatrickRyan
                 // Sign the user
                 authenticationManager.SignIn(new AuthenticationProperties() { IsPersistent = false }, userIdentity);
 
-                // Redirect to Main Menu
+                // Redirect to Default
                 Response.Redirect("~/Default.aspx");
             }
             else

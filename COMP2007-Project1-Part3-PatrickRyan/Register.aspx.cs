@@ -43,7 +43,7 @@ namespace COMP2007_Project1_Part3_PatrickRyan
                 var authenticationManager = HttpContext.Current.GetOwinContext().Authentication;
                 var userIdentity = userManager.CreateIdentity(user, DefaultAuthenticationTypes.ApplicationCookie);
 
-                // Redirect to the Main Menu page
+                // Redirect to the Login page
                 Response.Redirect("~/Login.aspx");
             }
             else

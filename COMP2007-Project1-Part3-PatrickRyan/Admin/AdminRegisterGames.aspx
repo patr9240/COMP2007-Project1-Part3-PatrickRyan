@@ -1,11 +1,11 @@
-﻿<%@ Page Title="Game Register" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="GameRegister.aspx.cs" Inherits="COMP2007_Project1_Part3_PatrickRyan.GameRegister" %>
+﻿<%@ Page Title="Admin Game Register" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="AdminRegisterGames.aspx.cs" Inherits="COMP2007_Project1_Part3_PatrickRyan.Admin.AdminRegisterGames" %>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <!-- 
-     GameRegister.aspx
+     AdminRegisterGames.aspx
      Patrick Ross - Ryan Jameson
      COMP2007_Project1_Part3_PatrickRyan
-     This is the game registeration page for NorthStar Tracking
+     This is the admin game registeration page for NorthStar Tracking
     -->
       <div class="container">
         <div class="row">
@@ -41,6 +41,12 @@
                     <label class="control-label" for="WinningTeamTextBox">Winning Team</label>
                     <asp:TextBox runat="server" CssClass="form-control" ID="WinningTeamTextBox" placeholder="Winning Team" required="true"></asp:TextBox>
                 </div>
+                <div class="form-group">
+                    <label class="control-label" for="CreatedDate">Game Date</label>
+                    <asp:TextBox runat="server" TextMode="Date" CssClass="form-control" ID="CreatedDate" placeholder="Game Date" required="true"></asp:TextBox>
+                    <asp:RangeValidator ID="RangeValidator1" runat="server" ErrorMessage="Invalid Date! Format: mm/dd/yyyy" ControlToValidate="CreatedDate" MinimumValue="01/01/2000" MaximumValue="01/01/2999" 
+                        Type="Date" Display="Dynamic" BackColor="Wheat" ForeColor="WindowFrame" Font-Size="Large"></asp:RangeValidator>
+                </div>
                 <div class="text-right">
                     <asp:Button Text="Cancel" ID="CancelButton" CssClass="tbn btn-warning btn-lg" runat="server" UseSubmitBehavior="false" CausesValidation="false" OnClick="CancelButton_Click"/>
                     <asp:Button Text="Save" ID="SaveButton" CssClass="tbn btn-primary btn-lg" runat="server" OnClick="SaveButton_Click"/>
@@ -48,5 +54,4 @@
             </div>
         </div>
     </div>
-        
 </asp:Content>

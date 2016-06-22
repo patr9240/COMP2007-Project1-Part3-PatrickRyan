@@ -1,26 +1,23 @@
-﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="COMP2007_Project1_Part3_PatrickRyan._default" %>
+﻿<%@ Page Title="AdminGames" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="AdminGames.aspx.cs" Inherits="COMP2007_Project1_Part3_PatrickRyan.Admin.AdminGames" %>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <!-- 
-     Default.aspx
+     AdminGames.aspx
      Patrick Ross - Ryan Jameson
      COMP2007_Project1_Part3_PatrickRyan
-     This is the home page for NorthStar Tracking
-        Home
+     This is the admin games page
     -->
     <div class="img1">
-        <img src="Assets/baseball.gif" />
+        <img src="../Assets/baseball.gif" />
     </div>
 
     <div class="container">
         <div class="row">
             <div class="col-md-offset-1 col-md-8">
                 <h3><asp:Label ID="TrackingDateLabel" runat="server"></asp:Label></h3>
-                <asp:PlaceHolder ID="AddingGameHolder" runat="server">
-                <a href="/Adding/GameRegister.aspx" class="btn btn-success btn-sm"><i class="fa fa-plus"></i>Add a Game</a>
-                </asp:PlaceHolder>
+                <a href="/Admin/AdminRegisterGames.aspx" class="btn btn-success btn-sm"><i class="fa fa-plus"></i>Add a Game</a>
                 <asp:GridView ID="GamesGridView" runat="server" CssClass="table table-bordered table-striped table-hover"
-                    AutoGenerateColumns="false" DataKeyNames="GameID" AllowPaging="true" PagerSettings-Visible="false" PageSize="4" OnRowDeleting="GamesGridView_RowDeleting">
+                    AutoGenerateColumns="false" DataKeyNames="GameID" OnRowDeleting="GamesGridView_RowDeleting">
 
                     <Columns>
                         <asp:BoundField DataField="GameID" Visible="false" />
@@ -31,6 +28,14 @@
                         <asp:BoundField DataField="Team1" HeaderText="First Team" Visible="true" />
                         <asp:BoundField DataField="Team2" HeaderText="Second Team" Visible="true" />
                         <asp:BoundField DataField="WinningTeam" HeaderText="Winner" Visible="true" />
+
+                        <asp:BoundField DataField="Created" HeaderText="Created Date" DataFormatString="{0:d}" Visible="true" />
+                            <asp:HyperLinkField HeaderText="Edit" Text="<i calss='fa fa-encil-square-o fa-lg'></i> Edit"
+                            NavigateUrl="/Admin/AdminRegisterGames.aspx"  ControlStyle-CssClass="btn btn-primary btn-sm" DataNavigateUrlFields="GameID"
+                            runat="server" DataNavigateUrlFormatString="/Admin/AdminRegisterGames.aspx?GameID={0}" />
+                        <asp:CommandField HeaderText="Delete" DeleteText="<i class='fa fa-trash-o fa-lg'></i> Delete" ShowDeleteButton="true" ButtonType="Link"
+                            ControlStyle-CssClass="btn btn-danger btn-sm" />
+                            
                     </Columns>
                 </asp:GridView>
             </div>

@@ -7,19 +7,19 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace COMP2007_Project1_Part3_PatrickRyan {
+namespace COMP2007_Project1_Part3_PatrickRyan.Admin {
     
     
-    public partial class GameRegister {
+    public partial class AdminRegisterTeams {
         
         /// <summary>
-        /// GameNameTextBox control.
+        /// TeamNameTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox GameNameTextBox;
+        protected global::System.Web.UI.WebControls.TextBox TeamNameTextBox;
         
         /// <summary>
         /// DescriptionTextBox control.
@@ -31,49 +31,40 @@ namespace COMP2007_Project1_Part3_PatrickRyan {
         protected global::System.Web.UI.WebControls.TextBox DescriptionTextBox;
         
         /// <summary>
-        /// RunsTextBox control.
+        /// SportTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox RunsTextBox;
+        protected global::System.Web.UI.WebControls.TextBox SportTextBox;
         
         /// <summary>
-        /// SpectatorsTextBox control.
+        /// CityTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox SpectatorsTextBox;
+        protected global::System.Web.UI.WebControls.TextBox CityTextBox;
         
         /// <summary>
-        /// Team1TextBox control.
+        /// TotalRunsTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Team1TextBox;
+        protected global::System.Web.UI.WebControls.TextBox TotalRunsTextBox;
         
         /// <summary>
-        /// Team2TextBox control.
+        /// AllowedRunsTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Team2TextBox;
-        
-        /// <summary>
-        /// WinningTeamTextBox control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox WinningTeamTextBox;
+        protected global::System.Web.UI.WebControls.TextBox AllowedRunsTextBox;
         
         /// <summary>
         /// CancelButton control.

@@ -11,15 +11,13 @@ using System.Linq.Dynamic;
 
 /**
  * @author: Patrick Ross - Ryan Jameson
- * @date: June 15th, 2016
- * @version: 0.0.3 - Populates gridview, change games viewed by date
+ * @date: June 21st, 2016
+ * @version: 0.0.1 - Created page
  */
-
-namespace COMP2007_Project1_Part3_PatrickRyan
+namespace COMP2007_Project1_Part3_PatrickRyan.Admin
 {
-    public partial class _default : System.Web.UI.Page
+    public partial class AdminGames : System.Web.UI.Page
     {
-
         protected void Page_Load(object sender, EventArgs e)
         {
             //if loading page for the first time, populate the grid
@@ -28,17 +26,6 @@ namespace COMP2007_Project1_Part3_PatrickRyan
                 //get the games data
                 this.GetGames();
             }
-            if (HttpContext.Current.User.Identity.IsAuthenticated)
-            {
-
-                // show the team add button
-                AddingGameHolder.Visible = true;
-            }
-            else
-            {
-                AddingGameHolder.Visible = false;
-            }
-            
         }
 
         /**
@@ -71,6 +58,7 @@ namespace COMP2007_Project1_Part3_PatrickRyan
                 TrackingDateLabel.Text = date1.ToString("MMMM dd, yyyy") + " To " + date2.ToString("MMMM dd, yyyy");
             }
         }
+
         /**
          * <summary>
          * This event handler deletes a game from the databse using EF
@@ -107,6 +95,7 @@ namespace COMP2007_Project1_Part3_PatrickRyan
 
             }
         }
+
         /**
          * <summary>
          * This method gets the games from the database and puts them into the gridview when a index is selected in the dropdown

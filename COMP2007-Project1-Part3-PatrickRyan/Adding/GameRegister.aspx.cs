@@ -20,34 +20,7 @@ namespace COMP2007_Project1_Part3_PatrickRyan
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            //get the games data
-            this.GetTeamNames();
-        }
 
-        /**
-         * <summary>
-         * This method gets teamnames and enters them into the team name dropdown lists
-         * </summary>
-         * @method GetTeamNames
-         * @return {void}
-         * */
-        protected void GetTeamNames()
-        {
-
-            //connect to EF
-            using (GameTrackerConnection db = new GameTrackerConnection())
-            {
-
-                //query the teams table using EF and LINQ
-                var Teams = (from allTeamNames in db.Teams
-                             select allTeamNames.TeamName);
-                //adds team names to Team1dropdownlist
-                Team1DropDownList.DataSource = Teams.AsQueryable().ToList();
-                Team1DropDownList.DataBind();
-                //adds team names to Team2dropdownlist
-                Team2DropDownList.DataSource = Teams.AsQueryable().ToList();
-                Team2DropDownList.DataBind();
-            }
         }
 
         /**
@@ -84,8 +57,8 @@ namespace COMP2007_Project1_Part3_PatrickRyan
                 newGame.Description = DescriptionTextBox.Text;
                 newGame.Runs = Convert.ToInt32(RunsTextBox.Text);
                 newGame.Spectators = Convert.ToInt32(SpectatorsTextBox.Text);
-                newGame.Team1 = Team1DropDownList.SelectedValue;
-                newGame.Team2 = Team2DropDownList.SelectedValue;
+                newGame.Team1 = Team1TextBox.Text;
+                newGame.Team2 = Team2TextBox.Text;
                 newGame.WinningTeam = WinningTeamTextBox.Text;
                 newGame.Created = DateTime.Now.Date;
 

@@ -33,14 +33,30 @@ namespace COMP2007_Project1_Part3_PatrickRyan
 
                 // show the team add button
                 AddingGameHolder.Visible = true;
-
+                //hide admin only fields
+                GameTableDate.Visible = false;
+                GameTableDelete.Visible = false;
+                GameTableEdit.Visible = false;
+                //if user = admin
+                if (HttpContext.Current.User.Identity.Name == "admin")
+                {
+                    //hide admin only fields
+                    GameTableDate.Visible = true;
+                    GameTableDelete.Visible = true;
+                    GameTableEdit.Visible = true;
+                }
 
 
             }
             else
             {
                 AddingGameHolder.Visible = false;
+                //hide admin only fields
+                GameTableDate.Visible = false;
+                GameTableDelete.Visible = false;
+                GameTableEdit.Visible = false;
             }
+            
         }
 
         /**

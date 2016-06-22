@@ -40,6 +40,33 @@ namespace COMP2007_Project1_Part3_PatrickRyan {
         protected global::System.Web.UI.WebControls.GridView GamesGridView;
         
         /// <summary>
+        /// GameTableDate control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.BoundField GameTableDate;
+        
+        /// <summary>
+        /// GameTableEdit control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLinkField GameTableEdit;
+        
+        /// <summary>
+        /// GameTableDelete control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CommandField GameTableDelete;
+        
+        /// <summary>
         /// TrackingWeekDropDown control.
         /// </summary>
         /// <remarks>

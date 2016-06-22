@@ -29,7 +29,15 @@
                         <asp:BoundField DataField="Team1" HeaderText="First Team" Visible="true" />
                         <asp:BoundField DataField="Team2" HeaderText="Second Team" Visible="true" />
                         <asp:BoundField DataField="WinningTeam" HeaderText="Winner" Visible="true" />
-                        <asp:BoundField DataField="Created" HeaderText="Current Date" DataFormatString="{0:d}" Visible="false" />
+
+                        <!-- Admin only fields
+                        <asp:BoundField ID="GameTableDate" DataField="Created" HeaderText="Current Date" DataFormatString="{0:d}" Visible="true" />
+                            <asp:HyperLinkField ID="GameTableEdit" HeaderText="Edit" Text="<i calss='fa fa-encil-square-o fa-lg'></i> Edit"
+                            NavigateUrl="/Adding/GameRegister.aspx.aspx"  ControlStyle-CssClass="btn btn-primary btn-sm" DataNavigateUrlFields="GameID"
+                            runat="server" DataNavigateUrlFormatString="/Adding/GameRegister.aspx?GameID={0}" />
+                        <asp:CommandField ID="GameTableDelete" HeaderText="Delete" DeleteText="<i class='fa fa-trash-o fa-lg'></i> Delete" ShowDeleteButton="true" ButtonType="Link"
+                            ControlStyle-CssClass="btn btn-danger btn-sm" />
+                            -->
                     </Columns>
                 </asp:GridView>
             </div>

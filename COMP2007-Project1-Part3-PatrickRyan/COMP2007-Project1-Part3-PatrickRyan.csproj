@@ -190,6 +190,16 @@
       <DependentUpon>GameTrackerModel.edmx</DependentUpon>
       <LastGenOutput>GameTrackerModel.cs</LastGenOutput>
     </Content>
+    <Content Include="Models\UsersModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>UsersModel.edmx</DependentUpon>
+      <LastGenOutput>UsersModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\UsersModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>UsersModel.edmx</DependentUpon>
+      <LastGenOutput>UsersModel.cs</LastGenOutput>
+    </Content>
     <Content Include="Modify.aspx" />
     <Content Include="Register.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -200,6 +210,13 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <EntityDeploy Include="Models\UsersModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>UsersModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\UsersModel.edmx.diagram">
+      <DependentUpon>UsersModel.edmx</DependentUpon>
+    </Content>
     <None Include="Scripts\jquery-2.2.4.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -286,6 +303,18 @@
     <Compile Include="Logout.aspx.designer.cs">
       <DependentUpon>Logout.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Models\AspNetRole.cs">
+      <DependentUpon>UsersModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AspNetUser.cs">
+      <DependentUpon>UsersModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AspNetUserClaim.cs">
+      <DependentUpon>UsersModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AspNetUserLogin.cs">
+      <DependentUpon>UsersModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\ContosoModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -333,6 +362,21 @@
     </Compile>
     <Compile Include="Models\Team.cs">
       <DependentUpon>GameTrackerModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UsersModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UsersModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UsersModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UsersModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UsersModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UsersModel.edmx</DependentUpon>
     </Compile>
     <Compile Include="Modify.aspx.cs">
       <DependentUpon>Modify.aspx</DependentUpon>

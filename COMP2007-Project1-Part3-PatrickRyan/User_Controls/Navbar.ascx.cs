@@ -75,18 +75,6 @@ namespace COMP2007_Project1_Part3_PatrickRyan
                 case "Game Register":
                     home.Attributes.Add("class", "active");
                     break;
-                case "AdminGames":
-                    admingames.Attributes.Add("class", "active");
-                    break;
-                case "Admin Game Register":
-                    admingames.Attributes.Add("class", "active");
-                    break;
-                case "AdminTeams":
-                    adminteams.Attributes.Add("class", "active");
-                    break;
-                case "AdminRegisterTeams":
-                    adminteams.Attributes.Add("class", "active");
-                    break;
                 case "Team":
                     team.Attributes.Add("class", "active");
                     break;
@@ -102,8 +90,24 @@ namespace COMP2007_Project1_Part3_PatrickRyan
                 case "Logout":
                     logout.Attributes.Add("class", "active");
                     break;
-                case "Modify":
-                    modify.Attributes.Add("class", "active");
+
+                case "AdminGames":
+                    admingames.Attributes.Add("class", "active");
+                    break;
+                case "Admin Game Register":
+                    admingames.Attributes.Add("class", "active");
+                    break;
+                case "AdminTeams":
+                    adminteams.Attributes.Add("class", "active");
+                    break;
+                case "AdminRegisterTeams":
+                    adminteams.Attributes.Add("class", "active");
+                    break;
+                case "AdminUsers":
+                    adminusers.Attributes.Add("class", "active");
+                    break;
+                case "AdminUserDetails":
+                    adminusers.Attributes.Add("class", "active");
                     break;
             }
         }

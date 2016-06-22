@@ -130,6 +130,8 @@
     <Content Include="Admin\AdminRegisterGames.aspx" />
     <Content Include="Admin\AdminRegisterTeams.aspx" />
     <Content Include="Admin\AdminTeams.aspx" />
+    <Content Include="Admin\AdminUserDetails.aspx" />
+    <Content Include="Admin\AdminUsers.aspx" />
     <Content Include="Assets\android-chrome-144x144.png" />
     <Content Include="Assets\android-chrome-192x192.png" />
     <Content Include="Assets\android-chrome-36x36.png" />
@@ -204,7 +206,7 @@
       <DependentUpon>UsersModel.edmx</DependentUpon>
       <LastGenOutput>UsersModel.cs</LastGenOutput>
     </Content>
-    <Content Include="Modify.aspx" />
+    <Content Include="Profile.aspx" />
     <Content Include="Register.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -299,6 +301,20 @@
     </Compile>
     <Compile Include="Admin\AdminTeams.aspx.designer.cs">
       <DependentUpon>AdminTeams.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminUserDetails.aspx.cs">
+      <DependentUpon>AdminUserDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminUserDetails.aspx.designer.cs">
+      <DependentUpon>AdminUserDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminUsers.aspx.cs">
+      <DependentUpon>AdminUsers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminUsers.aspx.designer.cs">
+      <DependentUpon>AdminUsers.aspx</DependentUpon>
     </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
@@ -410,12 +426,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>UsersModel.edmx</DependentUpon>
     </Compile>
-    <Compile Include="Modify.aspx.cs">
-      <DependentUpon>Modify.aspx</DependentUpon>
+    <Compile Include="Profile.aspx.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Modify.aspx.designer.cs">
-      <DependentUpon>Modify.aspx</DependentUpon>
+    <Compile Include="Profile.aspx.designer.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
     </Compile>
     <Compile Include="Register.aspx.cs">
       <DependentUpon>Register.aspx</DependentUpon>
